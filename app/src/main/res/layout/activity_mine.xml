@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/metal_bg" >
+
+    <!--
+        <ScrollView
+        android:id="@+id/mine_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    -->
+
+    <ImageView
+        android:id="@+id/mine_count_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bg_mine_count" />
+
+    <ImageView
+        android:id="@+id/time_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/bg_time" />
+
+    <ImageView
+        android:id="@+id/smile_bg_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bg_smile" />
+
+    <RelativeLayout
+        android:id="@+id/mine_layout"
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        android:layout_marginTop="100dp" >
+
+        <com.zyl.mine.MineView
+            android:id="@+id/mineview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" >
+        </com.zyl.mine.MineView>
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/zoom_in_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="#00000000"
+        android:src="@drawable/zoomin_btn" />
+
+    <ImageButton
+        android:id="@+id/zoom_out_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@id/zoom_in_btn"
+        android:background="#00000000"
+        android:src="@drawable/zoomout_btn" />
+
+    <ImageButton
+        android:id="@+id/flag_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="#00000000"
+        android:src="@drawable/flag_btn_up" />
+
+</RelativeLayout>
